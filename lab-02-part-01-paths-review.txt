@@ -95,4 +95,9 @@ e. Determine which folder in my-stuff was created most recently by using ls.  (t
 f. Remove that folder.
 g. Show all of the commands that you used to complete the above exercise.  (for example, how did you determine which folder in my-stuff was the most recent?).  Use the command: history ... to help you remember what you did!  Paste the commands below.
 ----------
-
+b) mkdir -p mystuff/archived/current
+c) "hostname". Computer name: "Mikes-Air.home"
+d) mkdir -p mystuff/Mikes-Air.home
+e) ls -alt, "Mikes-Air.home" folder was created most recently
+f) rmdir Mikes-Air.home
+g) all of the above
