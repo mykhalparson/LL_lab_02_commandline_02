@@ -177,6 +177,12 @@ We're going to mess around with archiving and compressing files.  We'll make a d
 
 Copy and paste the output below.
 ----------
+Applications		Library			__MACOSX
+CAdebug.log		MacKeeper Backups	google.html
+Creative Cloud Files	Movies			mtec1002
+Desktop			Music			mtec1002-lab-02
+Documents		Pictures		mtec1002-lab-02.zip
+Downloads		Public			stuff
 
 
 
@@ -189,6 +195,7 @@ List the files in the directory you're currently in (which should be stuff).
 
 Copy and paste the output below.
 ----------
+hello.txt
 
 
 
@@ -201,7 +208,8 @@ List the files in the directory you're currently in (which should be home).
 
 Copy and paste the output below.
 ----------
-
+a stuff
+a stuff/hello.txt
 
 
 ==========
@@ -211,7 +219,8 @@ $ tar -cvf stuff.tar stuff
 
 Copy and paste the output below.
 ----------
-
+a stuff
+a stuff/hello.txt
 
 
 ==========
@@ -219,6 +228,13 @@ Copy and paste the output below.
 
 Copy and paste the output below. (It should contain stuff.tar)
 ----------
+Applications		MacKeeper Backups	mtec1002
+CAdebug.log		Movies			mtec1002-lab-02
+Creative Cloud Files	Music			mtec1002-lab-02.zip
+Desktop			Pictures		stuff
+Documents		Public			stuff.tar
+Downloads		__MACOSX
+Library			google.html
 
 
 
@@ -229,7 +245,13 @@ gzip stuff.tar
 
 List your files again.... you should have a new file with a .gz extension.  Copy and paste the output of your this below.
 ----------
-
+Applications		MacKeeper Backups	mtec1002
+CAdebug.log		Movies			mtec1002-lab-02
+Creative Cloud Files	Music			mtec1002-lab-02.zip
+Desktop			Pictures		stuff
+Documents		Public			stuff.tar.gz
+Downloads		__MACOSX
+Library			google.html
 
 
 ==========
@@ -243,7 +265,7 @@ Change your directory to mtec1002-lab-02.
 
 List the files.  Copy and paste the output below (stuff.tar.gz should be there).
 ----------
-
+books		logs		stuff.tar.gz	web
 
 ==========
 23. You should be in the lab directory.  Let's uncompress the file.
@@ -252,7 +274,10 @@ $ tar -xvf stuff.tar.gz
 
 List the files.  Copy and paste the output below (the folder, stuff, should be there).
 ----------
+x stuff/
+x stuff/hello.txt
 
+books		logs		stuff		stuff.tar.gz	web
 
 
 
